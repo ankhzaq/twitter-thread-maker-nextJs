@@ -1,0 +1,6 @@
+# Generated files
+.idea
+.next
+
+# Generated folders
+node_modules
