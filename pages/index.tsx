@@ -1,5 +1,7 @@
+
+import styles from './index.module.scss';
 const HomePage = () => (
-  <div>Welcome to Next.js!</div>
+  <div className={styles.title}>Welcome to Next.js!</div>
 )
 
 export default HomePage

@@ -1,0 +1,18 @@
+// colors
+$primary-color: #3C75E7;
+$black: #000000;
+$grey: #72767A;
+
+// border radius
+$border-radius-big: 10px;
+$border-radius-small: 5px;
+
+:export {
+  primaryColor: $primary-color;
+  black: $black;
+  grey: $grey;
+
+  border-radius-big: $border-radius-big;
+  border-radius-small: $border-radius-small;
+
+}
