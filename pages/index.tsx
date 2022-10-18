@@ -1,7 +1,10 @@
-
+import Header from 'components/Header/Header';
+import 'normalize.css';
 import styles from './index.module.scss';
-const HomePage = () => (
-  <div className={styles.title}>Welcome to Next.js!</div>
+const App = () => (
+  <div className={styles.appWrapper}>
+    <Header />
+  </div>
 )
 
-export default HomePage
+export default App

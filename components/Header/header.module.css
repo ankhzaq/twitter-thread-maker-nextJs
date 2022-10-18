@@ -1,0 +1,20 @@
+:export {
+  primaryColor: #3C75E7;
+  black: #000000;
+  grey: #72767A;
+  border-radius-big: 10px;
+  border-radius-small: 5px;
+}
+
+.title {
+  color: #3C75E7;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=header.module.css.map */
