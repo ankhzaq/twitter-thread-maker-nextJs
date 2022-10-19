@@ -1,0 +1,26 @@
+:export {
+  primaryColor: #3C75E7;
+  black: #000000;
+  grey: #72767A;
+  border-radius-big: 10px;
+  border-radius-small: 5px;
+}
+
+.active {
+  background-color: #3C75E7;
+  border: 1px solid #3C75E7;
+  border-radius: 21px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.button {
+  border-radius: 21px;
+  padding: 5px 10px;
+}
+
+.inactive {
+  border: 1px solid #000000;
+}
+
+/*# sourceMappingURL=button.module.css.map */

@@ -1,6 +1,7 @@
 .appWrapper {
   height: 100vh;
   font-family: sans-serif;
+  letter-spacing: 1px;
   width: 100%;
 }
 
