@@ -16,6 +16,7 @@
 
 .button {
   border-radius: 21px;
+  display: inline-block;
   padding: 5px 10px;
 }
 

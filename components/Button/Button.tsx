@@ -10,7 +10,7 @@ const Button = ({ active, text }: Props) => {
   const btnClass = styles.button;
   const activeClass = active ? styles.active : styles.inactive;
   return (
-    <span className={`${btnClass} ${activeClass}`}>{text}</span>
+    <div className={`${btnClass} ${activeClass}`}>{text}</div>
   );
 }
 

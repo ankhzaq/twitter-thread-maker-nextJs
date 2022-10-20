@@ -1,0 +1,14 @@
+:export {
+  primaryColor: #3C75E7;
+  black: #000000;
+  grey: #72767A;
+  border-radius-big: 10px;
+  border-radius-small: 5px;
+}
+
+.input {
+  border: 2px solid #3C75E7;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=InputLongTweet.module.css.map */
