@@ -2,5 +2,6 @@
   "header": {
     "title": "ThreadMaker",
     "subtitle": "Create twitter thread"
-  }
+  },
+  "inputLongTweet": "Write here the tweet as long as you want :) \nYou can indicate the end of the tweet manually with two empty lines.\n\n\nThis is the second tweet.\nIf you don't use the two empty lines, the tweet will end in an smart way"
 }
