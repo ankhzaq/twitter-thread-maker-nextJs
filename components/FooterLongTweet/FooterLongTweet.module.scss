@@ -1,0 +1,22 @@
+@import '../../variables.module';
+
+.blueText {
+  color: $primary-color;
+  font-weight: 600;
+}
+
+.input {
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.lightWrapper {
+  color: $grey;
+  display: flex;
+  align-items: center;
+
+  .spanText {
+    padding-top: 5px;
+  }
+}

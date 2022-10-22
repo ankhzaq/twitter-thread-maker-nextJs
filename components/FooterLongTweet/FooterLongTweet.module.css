@@ -1,0 +1,29 @@
+:export {
+  primaryColor: #3C75E7;
+  black: #000000;
+  grey: #72767A;
+  border-radius-big: 10px;
+  border-radius-small: 5px;
+}
+
+.blueText {
+  color: #3C75E7;
+  font-weight: 600;
+}
+
+.input {
+  border: 2px solid #3C75E7;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.lightWrapper {
+  color: #72767A;
+  display: flex;
+  align-items: center;
+}
+.lightWrapper .spanText {
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=FooterLongTweet.module.css.map */

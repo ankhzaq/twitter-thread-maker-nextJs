@@ -4,6 +4,7 @@ type spaces = "5px" | "10px" | "15px" | "20px" | "25px";
 
 interface Props {
   children: ReactNode;
+  className?: string;
   marginTop?: spaces;
   marginBottom?: spaces;
   marginRight?: spaces;
@@ -17,10 +18,11 @@ interface Props {
 const Spacer = (props: Props) => {
   const {
     children,
+    className,
     ...styles
   } = props;
   return (
-    <div style={styles}>
+    <div className={className} style={styles}>
       {children}
     </div>
   );

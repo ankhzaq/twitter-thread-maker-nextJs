@@ -5,15 +5,17 @@
   border: 1px solid $primary-color;
   border-radius: 21px;
   color: $white;
-  font-weight: bold;
 }
 
 .button {
   border-radius: 21px;
   display: inline-block;
+  font-weight: bold;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 .inactive {
+  background-color: $white;
   border: 1px solid $black;
 }
