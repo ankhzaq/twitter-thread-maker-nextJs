@@ -1,0 +1,63 @@
+@import '../../variables.module';
+
+$small-font-size: 13px;
+
+.tweetWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  font-size: 15px;
+  position: relative;
+
+  .userInfo {
+    font-size: $small-font-size;
+    margin-left: 8px;
+    margin-top: 4px;
+
+    .fullName {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .grey {
+      color: $grey;
+    }
+
+    .separator {
+      color: $grey;
+      margin: 0 5px;
+    }
+  }
+
+  .logoAndLine {
+    display: flex;
+
+    .logo {
+      height: 48px;
+      width: 48px;
+    }
+
+    .logoCopy {
+      position: absolute;
+      right: 0;
+    }
+
+    .line {
+      background-color: $grey;
+      border-radius: 5px;
+      flex: 1;
+      margin: 5px 0;
+      width: 2px;
+    }
+  }
+
+  .iconWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}

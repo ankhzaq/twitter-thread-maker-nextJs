@@ -1,0 +1,59 @@
+:export {
+  primaryColor: #3C75E7;
+  black: #000000;
+  grey: #72767A;
+  border-radius-big: 10px;
+  border-radius-small: 5px;
+}
+
+.tweetWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  font-size: 15px;
+  position: relative;
+}
+.tweetWrapper .userInfo {
+  font-size: 13px;
+  margin-left: 8px;
+  margin-top: 4px;
+}
+.tweetWrapper .userInfo .fullName {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.tweetWrapper .userInfo .grey {
+  color: #72767A;
+}
+.tweetWrapper .userInfo .separator {
+  color: #72767A;
+  margin: 0 5px;
+}
+.tweetWrapper .logoAndLine {
+  display: flex;
+}
+.tweetWrapper .logoAndLine .logo {
+  height: 48px;
+  width: 48px;
+}
+.tweetWrapper .logoAndLine .logoCopy {
+  position: absolute;
+  right: 0;
+}
+.tweetWrapper .logoAndLine .line {
+  background-color: #72767A;
+  border-radius: 5px;
+  flex: 1;
+  margin: 5px 0;
+  width: 2px;
+}
+.tweetWrapper .iconWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.tweetWrapper .iconWrapper .icon {
+  height: 18px;
+  width: 18px;
+}
+
+/*# sourceMappingURL=tweet.module.css.map */
