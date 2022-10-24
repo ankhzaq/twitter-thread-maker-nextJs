@@ -22,7 +22,7 @@ const Tweet = ({ fullName, text, username }: Props) => {
   }
   return (
     <div className={styles.tweetWrapper}>
-      <div className={styles.logoAndLine}>
+      <div className={styles.flexWrapper}>
         <div className={styles.logo}>
           <Image src={logoTwitter} />
         </div>
@@ -32,25 +32,29 @@ const Tweet = ({ fullName, text, username }: Props) => {
           <span className={styles.separator}>·</span>
           <span className={styles.grey}>{getTweetDate()}</span>
         </div>
-        <div className={`${styles.logo} ${styles.logoCopy}`}>
+        <div className={styles.logoCopy}>
           <Image src={copy} />
         </div>
       </div>
-      <div>
-        <span className={styles.line}/>
-        <div>{text}</div>
-        <div className={styles.iconWrapper}>
-          <div className={styles.icon}>
-            <Image src={speechBubble} />
-          </div>
-          <div className={styles.icon}>
-            <Image src={retweet} />
-          </div>
-          <div className={styles.icon}>
-            <Image src={heart} />
-          </div>
-          <div className={styles.icon}>
-            <Image src={upload} />
+      <div className={styles.flexWrapper}>
+        <div className={styles.lineWrapper}>
+          <div className={styles.line}/>
+        </div>
+        <div className={styles.contentWrapper}>
+          <div className={styles.text}>{text}</div>
+          <div className={styles.iconWrapper}>
+            <div className={styles.icon}>
+              <Image src={speechBubble} />
+            </div>
+            <div className={styles.icon}>
+              <Image src={retweet} />
+            </div>
+            <div className={styles.icon}>
+              <Image src={heart} />
+            </div>
+            <div className={styles.icon}>
+              <Image src={upload} />
+            </div>
           </div>
         </div>
       </div>

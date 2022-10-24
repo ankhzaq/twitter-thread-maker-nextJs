@@ -2,11 +2,15 @@
 
 $small-font-size: 13px;
 
+$width-icon: 48px;
+
 .tweetWrapper {
+  border-bottom: 2px solid $primary-color;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
   font-size: 15px;
+  max-width: 400px;
+  padding: 10px;
   position: relative;
 
   .userInfo {
@@ -29,25 +33,44 @@ $small-font-size: 13px;
     }
   }
 
-  .logoAndLine {
+  .flexWrapper {
     display: flex;
 
+    .contentWrapper {
+      flex: 1;
+
+      .text {
+        padding-bottom: 10px;
+        padding-top: 5px;
+      }
+    }
+
     .logo {
-      height: 48px;
-      width: 48px;
+      height: $width-icon;
+      width: $width-icon;
     }
 
     .logoCopy {
+      height: 24px;
+      width: 24px;
       position: absolute;
       right: 0;
     }
 
-    .line {
-      background-color: $grey;
-      border-radius: 5px;
+    .lineWrapper {
+      align-items: center;
+      display: flex;
       flex: 1;
-      margin: 5px 0;
-      width: 2px;
+      justify-content: center;
+      padding-top: 3px;
+      max-width: $width-icon;
+
+      .line {
+        background-color: $grey;
+        border-radius: 5px;
+        height: 100%;
+        width: 2px;
+      }
     }
   }
 
