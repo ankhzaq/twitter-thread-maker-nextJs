@@ -10,11 +10,9 @@ import Login from 'components/Login/Login';
 import 'normalize.css';
 import styles from './index.module.scss';
 
-// session
-import { SessionProvider } from 'next-auth/react';
-
-const App = () => (
-  <SessionProvider>
+const App = ({ session }) => {
+  if(session) debugger;
+  return (
     <div className={styles.appWrapper}>
       <Header />
       <Login />
@@ -24,7 +22,7 @@ const App = () => (
       <FooterLongTweet />
       <Tweet  fullName="Zaquiel Rodriguez" text="Write here the tweet as long as you want :) \nYou can indicate the end of the tweet manually with two empty lines." username="zaqMyer"/>
     </div>
-  </SessionProvider>
-)
+  );
+}
 
 export default App

@@ -1,23 +1,10 @@
-import { signIn, signOut, useSession, } from 'next-auth/react';
-import { useEffect } from 'react';
+import { signIn, signOut, useSession } from 'next-auth/client';
 
 const Login = () => {
-  const { data } = useSession();
+  const [session] = useSession();
 
-  if (process.env.NEXT_PUBLIC_TWITTER_CONSUMER_KEY) {
-    debugger;
-  } else {
-    debugger;
-  }
-
-  const signInWithTwitter = () => {
-    debugger;
-    if (!data) {
-      signIn();
-    }
-  }
   return (
-    <button onClick={signInWithTwitter}>Sign in with twitter</button>
+    session ? (<button onClick={() => signOut()}>Bye {session.user.name}</button>) : (<button onClick={() => signIn()}>Sign in with twitter</button>)
   );
 }
 
