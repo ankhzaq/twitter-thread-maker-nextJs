@@ -1,10 +1,10 @@
-import { signIn, signOut, useSession } from 'next-auth/client';
+import { signIn, signOut, useSession } from 'next-auth/react';
 
 const Login = () => {
-  const [session] = useSession();
+  const { data } = useSession();
 
   return (
-    session ? (<button onClick={() => signOut()}>Bye {session.user.name}</button>) : (<button onClick={() => signIn()}>Sign in with twitter</button>)
+    data ? (<button onClick={() => signOut()}>Bye {data.user.name}</button>) : (<button onClick={() => signIn()}>Sign in with twitter</button>)
   );
 }
 

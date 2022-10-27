@@ -1,12 +1,12 @@
 import NextAuth from 'next-auth';
-import Providers from 'next-auth/providers';
+import TwitterProvider from 'next-auth/providers/twitter';
 
 export default NextAuth({
-  site: process.env.NEXTAUTH_URL,
   providers: [
-    Providers.Twitter({
-      clientId: process.env.TWITTER_CONSUMER_KEY,
-      clientSecret: process.env.TWITTER_CONSUMER_SECRET
+    TwitterProvider({
+      clientId: process.env.TWITTER_CONSUMER_CLIENT_ID,
+      clientSecret: process.env.TWITTER_CONSUMER_CLIENT_SECRET,
+      version: "2.0",
     })
   ]
 });
