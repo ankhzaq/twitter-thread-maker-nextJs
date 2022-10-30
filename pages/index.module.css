@@ -5,4 +5,9 @@
   width: 100%;
 }
 
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=index.module.css.map */

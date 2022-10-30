@@ -14,8 +14,10 @@ const App = ({ session }) => {
   if(session) debugger;
   return (
     <div className={styles.appWrapper}>
-      <Header />
-      <Login />
+      <div className={styles.headerWrapper}>
+        <Header />
+        <Login />
+      </div>
       <Spacer marginBottom="10px">
         <InputLongTweet />
       </Spacer>

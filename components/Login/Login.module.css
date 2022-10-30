@@ -1,0 +1,24 @@
+.icon {
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.iconSignIn {
+  width: 32px;
+}
+.iconSignIn img {
+  top: -12px !important;
+}
+
+.loginBtn {
+  align-self: center;
+  background-color: unset;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  padding: 10px 15px;
+}
+
+/*# sourceMappingURL=Login.module.css.map */

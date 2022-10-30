@@ -12,5 +12,9 @@
     "endTweet2": "Before 150 chars.",
     "beforeCut": "Text to add before cutting the tweet",
     "beforeCutPlaceholder": "[...continue]"
+  },
+  "login": {
+    "signin": "Sign in",
+    "signout": "Sign in"
   }
 }
