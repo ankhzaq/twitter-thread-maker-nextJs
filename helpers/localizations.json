@@ -3,13 +3,14 @@
     "title": "ThreadMaker",
     "subtitle": "Create twitter thread"
   },
-  "inputLongTweet": "Write here the tweet as long as you want :) \nYou can indicate the end of the tweet manually with two empty lines.\n\n\nThis is the second tweet.\nIf you don't use the two empty lines, the tweet will end in an smart way",
+  "inputLongTweet": "Write here the tweet as long as you want :) \nYou can indicate the end of the tweet manually with two empty lines.\n\n\nThis is the second tweet.\nIf you don't use the two empty lines, the tweet will end in an smart way. End tweet",
   "footerLongTweet": {
     "light": "Use 2 empty lines between text and it will consider this as a new tweet.",
     "endTweet1": "End tweet according:",
     "endTweetOption1": "last punctuation mark",
     "endTweetOption2": "last word",
-    "endTweet2": "Before 150 chars.",
+    "endTweet2": "Before",
+    "endTweet3": "chars.",
     "beforeCut": "Text to add before cutting the tweet",
     "beforeCutPlaceholder": "[...continue]"
   },

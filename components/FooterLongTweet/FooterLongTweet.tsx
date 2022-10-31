@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Spacer from 'components/Spacer/Spacer';
 import Button from 'components/Button/Button';
 import React, { useState } from 'react';
+import { LIMIT_CHARACTERS } from '../../utils/tweet';
 const FooterLongTweet = () => {
   const [endTweetOption, setEndTweetOption] = useState(1);
   const [textBeforeCut, setTextBeforeCut] = useState("");
@@ -32,6 +33,8 @@ const FooterLongTweet = () => {
           <Button active={endTweetOption === 2} onClick={() => changeEndTweetOption(2)} text={constants.footerLongTweet.endTweetOption2} />
         </Spacer>
         <span className={styles.blueText}>{constants.footerLongTweet.endTweet2}</span>
+        <span className={styles.blueText}>&nbsp;{LIMIT_CHARACTERS}&nbsp;</span>
+        <span className={styles.blueText}>{constants.footerLongTweet.endTweet3}</span>
       </Spacer>
       <Spacer className={styles.lightWrapper}>
         <span className={styles.blueText}>{constants.footerLongTweet.beforeCut}</span>

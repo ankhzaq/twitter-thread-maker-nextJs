@@ -45,11 +45,18 @@
   height: 48px;
   width: 48px;
 }
+.tweetWrapper .flexWrapper .logo img {
+  border-radius: 22px;
+}
 .tweetWrapper .flexWrapper .logoCopy {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
   height: 24px;
-  width: 24px;
+  padding: 0;
   position: absolute;
   right: 0;
+  width: 24px;
 }
 .tweetWrapper .flexWrapper .lineWrapper {
   align-items: center;

@@ -1,3 +1,6 @@
+import { useSession } from 'next-auth/react';
+import { tweetDivision } from '../utils/tweet';
+import { useState } from 'react';
 //components
 import Header from 'components/Header/Header';
 import InputLongTweet from 'components/InputLongTweet/InputLongTweet';
@@ -9,9 +12,15 @@ import Login from 'components/Login/Login';
 // styles
 import 'normalize.css';
 import styles from './index.module.scss';
+import constants from 'helpers/localizations.json';
 
-const App = ({ session }) => {
-  if(session) debugger;
+const App = () => {
+  const [text, setText] = useState(constants.inputLongTweet);
+  const { data } = useSession();
+  const tweets = tweetDivision(text, []);
+
+  console.log(data);
+
   return (
     <div className={styles.appWrapper}>
       <div className={styles.headerWrapper}>
@@ -19,10 +28,16 @@ const App = ({ session }) => {
         <Login />
       </div>
       <Spacer marginBottom="10px">
-        <InputLongTweet />
+        <InputLongTweet onChange={(e) => setText(e.target.value)} text={text} />
       </Spacer>
       <FooterLongTweet />
-      <Tweet  fullName="Zaquiel Rodriguez" text="Write here the tweet as long as you want :) \nYou can indicate the end of the tweet manually with two empty lines." username="zaqMyer"/>
+      {
+        tweets.map((tweet, index) => (
+          <div key={index}>
+            <Tweet fullName="Zaquiel Rodriguez" text={tweet} username="zaqMyer"/>
+          </div>
+        ))
+      }
     </div>
   );
 }
