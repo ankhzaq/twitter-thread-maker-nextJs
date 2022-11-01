@@ -1,4 +1,3 @@
-import { useSession } from 'next-auth/react';
 import { tweetDivision } from '../utils/tweet';
 import { useState } from 'react';
 //components
@@ -16,28 +15,33 @@ import constants from 'helpers/localizations.json';
 
 const App = () => {
   const [text, setText] = useState(constants.inputLongTweet);
-  const { data } = useSession();
   const tweets = tweetDivision(text, []);
-
-  console.log(data);
 
   return (
     <div className={styles.appWrapper}>
-      <div className={styles.headerWrapper}>
-        <Header />
-        <Login />
-      </div>
-      <Spacer marginBottom="10px">
-        <InputLongTweet onChange={(e) => setText(e.target.value)} text={text} />
-      </Spacer>
-      <FooterLongTweet />
-      {
-        tweets.map((tweet, index) => (
-          <div key={index}>
-            <Tweet fullName="Zaquiel Rodriguez" text={tweet} username="zaqMyer"/>
+      <div className={styles.layoutMaxWidth}>
+        <div className={styles.headerWrapper}>
+          <Header />
+          <Login />
+        </div>
+        <div className={styles.wrapperBody}>
+          <Spacer marginRight="20px">
+            <Spacer marginBottom="10px">
+              <InputLongTweet onChange={(e) => setText(e.target.value)} text={text} />
+            </Spacer>
+            <FooterLongTweet />
+          </Spacer>
+          <div>
+            {
+              tweets.map((tweet, index) => (
+                <div key={index}>
+                  <Tweet fullName="Zaquiel Rodriguez" text={tweet} username="zaqMyer"/>
+                </div>
+              ))
+            }
           </div>
-        ))
-      }
+        </div>
+      </div>
     </div>
   );
 }

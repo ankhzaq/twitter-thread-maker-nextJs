@@ -1,6 +1,8 @@
 .appWrapper {
-  height: 100vh;
+  display: flex;
   font-family: sans-serif;
+  justify-content: center;
+  height: 100vh;
   letter-spacing: 1px;
   width: 100%;
 }
@@ -8,6 +10,15 @@
 .headerWrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.layoutMaxWidth {
+  max-width: 1000px;
+}
+
+.wrapperBody {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=index.module.css.map */
