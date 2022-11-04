@@ -1,14 +1,17 @@
+
+// border radius
+$border-radius-big: 10px;
+$border-radius-small: 5px;
+
 // colors
 $primary-color: #3C75E7;
 $black: #000000;
 $grey: #72767A;
 $white: #ffffff;
 
-// border radius
-$border-radius-big: 10px;
-$border-radius-small: 5px;
-
 $size-mobile: 375px;
+
+$size-medium: 1000px;
 
 :export {
   primaryColor: $primary-color;

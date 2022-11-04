@@ -1,3 +1,5 @@
+@import './variables.module';
+
 .appWrapper {
   display: flex;
   font-family: sans-serif;
@@ -19,4 +21,8 @@
 .wrapperBody {
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: $size-medium) {
+    flex-direction: column;
+  }
 }

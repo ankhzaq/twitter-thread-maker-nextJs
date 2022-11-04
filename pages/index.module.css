@@ -1,24 +1,17 @@
-.appWrapper {
-  display: flex;
-  font-family: sans-serif;
-  justify-content: center;
-  height: 100vh;
-  letter-spacing: 1px;
-  width: 100%;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import './variables.module';
+ *   |         ^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   index.module.scss 1:9  root stylesheet */
 
-.headerWrapper {
-  display: flex;
-  justify-content: space-between;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import './variables.module';\a   \2502          ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   index.module.scss 1:9  root stylesheet";
 }
-
-.layoutMaxWidth {
-  max-width: 1000px;
-}
-
-.wrapperBody {
-  display: flex;
-  justify-content: center;
-}
-
-/*# sourceMappingURL=index.module.css.map */
