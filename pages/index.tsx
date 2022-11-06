@@ -7,6 +7,7 @@ import Spacer from 'components/Spacer/Spacer';
 import FooterLongTweet from 'components/FooterLongTweet/FooterLongTweet';
 import Tweet from 'components/Tweet/Tweet';
 import Login from 'components/Login/Login';
+import Notification from 'components/Notification/Notification';
 
 // styles
 import 'normalize.css';
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <div className={styles.appWrapper}>
+      <Notification />
       <div className={styles.layoutMaxWidth}>
         <div className={styles.headerWrapper}>
           <Header />

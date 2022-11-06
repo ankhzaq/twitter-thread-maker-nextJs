@@ -1,0 +1,25 @@
+.notification {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  left: 50%;
+  padding: 5px 10px;
+  position: absolute;
+  top: 25px;
+  transform: translate(-50%, -50%);
+}
+.notification img {
+  height: 18px;
+  max-height: 18px;
+  max-width: 18px;
+  min-height: 18px;
+  min-width: 18px;
+  width: 18px;
+}
+
+.text {
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=Notification.module.css.map */
