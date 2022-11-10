@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Info from '../../assets/lottie_gifs/info.gif';
+import Info from '../../assets/icons/info.png';
 import styles from './Notification.module.scss';
 
 const Notification = () => (
